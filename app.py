@@ -483,7 +483,7 @@ if user_message:
                         "type": "category_products",
                         "category": detected_category,
                         "content": (
-                            f"I found {len(category_products)} "
+                            f"I found this "
                             f"product(s) in this category."
                         ),
                         "products": category_products

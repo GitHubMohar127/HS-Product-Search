@@ -21,7 +21,7 @@ def load_product_data():
 
     df = pd.read_excel(DATASET_PATH)
 
-    required_columns = [
+    required_columns = [   
         "Product_ID",
         "Category",
         "Product_Name",
@@ -33,7 +33,7 @@ def load_product_data():
         column
         for column in required_columns
         if column not in df.columns
-    ]
+    ] 
 
     if missing_columns:
         raise ValueError(
